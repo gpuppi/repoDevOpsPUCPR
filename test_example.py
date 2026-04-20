@@ -3,3 +3,4 @@ def test_addition():
 
 def test_string():
     assert "hello".upper() == "HELLO"
+    
