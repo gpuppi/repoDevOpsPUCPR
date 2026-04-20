@@ -21,7 +21,7 @@ jobs:
     - name: Run tests
       run: |
         pytest tests/
-    - name: Simulate delivery
+    - name: Simulate delivery 1
       uses: actions/upload-artifact@v7
       with:
         name: my-artifact
