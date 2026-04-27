@@ -5,4 +5,4 @@ def test_string():
     assert "hello".upper() == "HELLO"
     
 def test_random():
-    assert int(1010, 2) == bin(10)[2:]
+    assert "1010" == bin(10)[2:]
