@@ -1,5 +1,5 @@
 import random
-
+"""Exemplo de código para converter um número inteiro em binário."""
 print(f"Insira um valor inteiro (exemplo: {random.randint(1,100)}):")
 num = int(input())
 binary = bin(num)[2:]
