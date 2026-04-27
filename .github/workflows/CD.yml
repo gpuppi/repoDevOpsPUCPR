@@ -81,5 +81,14 @@ jobs:
         with:
           push: true
           tags: gpuppi/devops_gpuppi:tagname
-        
+  discord_notify:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run Discord Webhook
+        uses: johnnyhuy/actions-discord-git-webhook@main
+        with:
+          webhook_url: ${{ secrets.DISCORD_WEBHOOK}}
   
