@@ -81,6 +81,7 @@ jobs:
         with:
           push: true
           tags: gpuppi/devops_gpuppi:tagname
+  
   discord_notify:
     needs: deploy
     runs-on: ubuntu-latest
